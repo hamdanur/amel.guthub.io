@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url("beranda2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #aaca85; 
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #d1f0b1;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #d1f0b1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2F4F4F;
+  font-weight: bold;
+  padding: 5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+h2 {
+  text-align: center;
+  color:white; 
+  border-radius: 10px;
+  background-color:#2F4F4F;
+  padding: 10px 20px;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.kegiatan-item {
+  background-color: #d1f0b1;
+  color: #2F4F4F;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 200px;
+  text-align: left; 
+}
+
+.kegiatan-item:hover {
+  transform: scale(1.02);
+}
+
+.kegiatan-item img {
+  width: 200px; 
+  height: auto;
+  margin-right: 20px; 
+  border-radius: 5px;
+}
+
+
+section > div:not(.grid) {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #d1f0b1;
+  border-radius: 10px;
+  width: 50%;
+  min-width: 250px;
+  text-align: left;
+}
+
+section > div h3 {
+  margin-top: 0;
+  color: #2F4F4F;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+} 
